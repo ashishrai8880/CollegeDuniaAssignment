@@ -3,7 +3,7 @@ This is a full-stack Notes Application consisting of a Node.js backend and a Rea
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager npm to install dependencies.
 
 ```bash
 git clone <repository-url>
