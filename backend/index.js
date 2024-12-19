@@ -21,6 +21,14 @@ app.use(express.json());
 //for securing api from huge number of request
 app.use(helmet());
 
+// Logging middleware
+app.use((req, res, next) => {
+  const currentDateTime = new Date();
+  console.log(`[${currentDateTime}] ${req.method} ${req.url}`);
+  console.log(`Body: ${JSON.stringify(req.body)}`);
+  next();
+});
+
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
 
