@@ -8,7 +8,12 @@ const connectToMongo = require("./db");
 connectToMongo();
 
 //for accessing database from browser
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://collegeduniaassignment-frontend.onrender.com",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  })
+);
 
 //for getting user data in json format
 app.use(express.json());
