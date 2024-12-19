@@ -6,8 +6,8 @@ This is a full-stack Notes Application consisting of a Node.js backend and a Rea
 Use the package manager npm to install dependencies.
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/ashishrai8880/CollegeDuniaAssignment.git
+cd CollegeDuniaAssignment
 ```
 
 ## Backend Setup
