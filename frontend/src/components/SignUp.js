@@ -14,7 +14,8 @@ const SignUp = (props) => {
     e.preventDefault();
     console.log(credentials);
 
-    const url = `http://localhost:3001/api/auth/createuser`;
+    // const url = `http://localhost:3001/api/auth/createuser`;
+    const url = `https://collegeduniaassignment-backend.onrender.com/api/auth/createuser`;
 
     if (credentials.password === credentials.cpassword) {
       const response = await fetch(url, {

@@ -10,7 +10,8 @@ const Login = (props) => {
     e.preventDefault();
     console.log("submitting");
 
-    const url = `http://localhost:3001/api/auth/login`;
+    // const url = `http://localhost:3001/api/auth/login`;
+    const url = `https://collegeduniaassignment-backend.onrender.com/api/auth/login`;
 
     const response = await fetch(url, {
       method: "POST",
